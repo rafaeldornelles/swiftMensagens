@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C264EBB5272D88890055174D /* TriangleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB4272D88890055174D /* TriangleTip.swift */; };
+		C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB7272D95580055174D /* MensagensContainer.swift */; };
 		C26F9D66272D6BE90018A840 /* Senac_3_projetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */; };
 		C26F9D68272D6BE90018A840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D67272D6BE90018A840 /* ContentView.swift */; };
 		C26F9D6A272D6BF00018A840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26F9D69272D6BF00018A840 /* Assets.xcassets */; };
@@ -17,10 +18,15 @@
 		C26F9D7E272D6F5E0018A840 /* ContainerUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D7D272D6F5E0018A840 /* ContainerUsuarios.swift */; };
 		C26F9D81272D70460018A840 /* ContainerMensagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D80272D70460018A840 /* ContainerMensagens.swift */; };
 		C26F9D86272D7C940018A840 /* MensagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D85272D7C940018A840 /* MensagemView.swift */; };
+		C280570C272DC7DD00DEBCC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C280570B272DC7DD00DEBCC5 /* GoogleService-Info.plist */; };
+		C2805733272DD0B900DEBCC5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C2805732272DD0B900DEBCC5 /* FirebaseAuth */; };
+		C2805735272DD0B900DEBCC5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C2805734272DD0B900DEBCC5 /* FirebaseFirestore */; };
+		C2805737272DD0B900DEBCC5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C2805736272DD0B900DEBCC5 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C264EBB4272D88890055174D /* TriangleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTip.swift; sourceTree = "<group>"; };
+		C264EBB7272D95580055174D /* MensagensContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensContainer.swift; sourceTree = "<group>"; };
 		C26F9D62272D6BE80018A840 /* Senac-3-projeto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senac-3-projeto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senac_3_projetoApp.swift; sourceTree = "<group>"; };
 		C26F9D67272D6BE90018A840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,7 @@
 		C26F9D7D272D6F5E0018A840 /* ContainerUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerUsuarios.swift; sourceTree = "<group>"; };
 		C26F9D80272D70460018A840 /* ContainerMensagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerMensagens.swift; sourceTree = "<group>"; };
 		C26F9D85272D7C940018A840 /* MensagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagemView.swift; sourceTree = "<group>"; };
+		C280570B272DC7DD00DEBCC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2805733272DD0B900DEBCC5 /* FirebaseAuth in Frameworks */,
+				C2805735272DD0B900DEBCC5 /* FirebaseFirestore in Frameworks */,
+				C2805737272DD0B900DEBCC5 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +79,7 @@
 				C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */,
 				C26F9D69272D6BF00018A840 /* Assets.xcassets */,
 				C26F9D6E272D6BF00018A840 /* Info.plist */,
+				C280570B272DC7DD00DEBCC5 /* GoogleService-Info.plist */,
 				C26F9D6B272D6BF00018A840 /* Preview Content */,
 			);
 			path = "Senac-3-projeto";
@@ -99,6 +110,7 @@
 				C26F9D67272D6BE90018A840 /* ContentView.swift */,
 				C26F9D85272D7C940018A840 /* MensagemView.swift */,
 				C264EBB4272D88890055174D /* TriangleTip.swift */,
+				C264EBB7272D95580055174D /* MensagensContainer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +131,11 @@
 			dependencies = (
 			);
 			name = "Senac-3-projeto";
+			packageProductDependencies = (
+				C2805732272DD0B900DEBCC5 /* FirebaseAuth */,
+				C2805734272DD0B900DEBCC5 /* FirebaseFirestore */,
+				C2805736272DD0B900DEBCC5 /* FirebaseStorage */,
+			);
 			productName = "Senac-3-projeto";
 			productReference = C26F9D62272D6BE80018A840 /* Senac-3-projeto.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +163,9 @@
 				Base,
 			);
 			mainGroup = C26F9D59272D6BE80018A840;
+			packageReferences = (
+				C2805731272DD0B900DEBCC5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C26F9D63272D6BE80018A840 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,6 +182,7 @@
 			files = (
 				C26F9D6D272D6BF00018A840 /* Preview Assets.xcassets in Resources */,
 				C26F9D6A272D6BF00018A840 /* Assets.xcassets in Resources */,
+				C280570C272DC7DD00DEBCC5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +201,7 @@
 				C26F9D7E272D6F5E0018A840 /* ContainerUsuarios.swift in Sources */,
 				C26F9D77272D6D920018A840 /* Mensagem.swift in Sources */,
 				C264EBB5272D88890055174D /* TriangleTip.swift in Sources */,
+				C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +388,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2805731272DD0B900DEBCC5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2805732272DD0B900DEBCC5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2805731272DD0B900DEBCC5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C2805734272DD0B900DEBCC5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2805731272DD0B900DEBCC5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C2805736272DD0B900DEBCC5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2805731272DD0B900DEBCC5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C26F9D5A272D6BE80018A840 /* Project object */;
 }

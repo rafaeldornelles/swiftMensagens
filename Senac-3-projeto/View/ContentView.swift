@@ -8,35 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var mensagem: String = ""
     @State var mensagens = ContainerMensagens().mensagens
     var body: some View {
-    
         VStack{
-            ForEach(0..<mensagens.count) { index in
-                let mensagem = mensagens[index]
-                let nextMensagem = index + 1 < mensagens.count ? mensagens[index + 1] : nil
-                let previousMensagem = index > 0 ? mensagens[index - 1] : nil
+            Spacer()
+            MensagensContainer(mensagens: $mensagens)
+            HStack{
+                TextField("Mensagem...", text: $mensagem)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button("Enviar"){
+                    mensagens.append(Mensagem(
+                        conteudo: mensagem,
+                        destinatario: ContainerUsuarios.usuarios.last!,
+                        remetente: ContainerUsuarios.usuarios.first!,
+                        hora: Date(),
+                        status: .criado)
+                    )
+                    mensagem = ""
+                }.disabled(mensagem.count <= 0)
                 
-                
-                MensagemView(
-                    usuario: mensagem.remetente.nome.contains("Rafael") ? nil : mensagem.remetente,
-                    conteudo: mensagem.conteudo,
-                    hora: dateToString(date: mensagem.hora),
-                    status: mensagem.status.rawValue,
-                    isFirstOfGroup: previousMensagem == nil || mensagem.remetente.id != previousMensagem?.remetente.id,
-                    isLastOfGroup: nextMensagem == nil || mensagem.remetente.id != nextMensagem?.remetente.id)
             }
-           
-
-
         }.padding()
     }
-    
-    func dateToString(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "hh mm a"
-        return formatter.string(from: date)
-    }
+
     
 }
 
