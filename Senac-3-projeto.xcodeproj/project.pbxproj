@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C224549C2736CE2900C5ACC1 /* MensagensViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224549B2736CE2900C5ACC1 /* MensagensViewModel.swift */; };
+		C224549F2736F3E600C5ACC1 /* Conversa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224549E2736F3E600C5ACC1 /* Conversa.swift */; };
+		C22454A42736F9B100C5ACC1 /* ConversasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454A32736F9B100C5ACC1 /* ConversasView.swift */; };
+		C22454A7273706B500C5ACC1 /* ConversasContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454A6273706B500C5ACC1 /* ConversasContainer.swift */; };
+		C22454B027370A9700C5ACC1 /* TelaMensagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */; };
 		C264EBB5272D88890055174D /* TriangleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB4272D88890055174D /* TriangleTip.swift */; };
 		C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB7272D95580055174D /* MensagensContainer.swift */; };
 		C26F9D66272D6BE90018A840 /* Senac_3_projetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */; };
@@ -25,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C224549B2736CE2900C5ACC1 /* MensagensViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensViewModel.swift; sourceTree = "<group>"; };
+		C224549E2736F3E600C5ACC1 /* Conversa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversa.swift; sourceTree = "<group>"; };
+		C22454A32736F9B100C5ACC1 /* ConversasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversasView.swift; sourceTree = "<group>"; };
+		C22454A6273706B500C5ACC1 /* ConversasContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversasContainer.swift; sourceTree = "<group>"; };
+		C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaMensagens.swift; sourceTree = "<group>"; };
 		C264EBB4272D88890055174D /* TriangleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTip.swift; sourceTree = "<group>"; };
 		C264EBB7272D95580055174D /* MensagensContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensContainer.swift; sourceTree = "<group>"; };
 		C26F9D62272D6BE80018A840 /* Senac-3-projeto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senac-3-projeto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C22454A12736F86800C5ACC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C224549B2736CE2900C5ACC1 /* MensagensViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C26F9D59272D6BE80018A840 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +92,7 @@
 		C26F9D64272D6BE80018A840 /* Senac-3-projeto */ = {
 			isa = PBXGroup;
 			children = (
+				C22454A12736F86800C5ACC1 /* ViewModel */,
 				C26F9D83272D75A60018A840 /* View */,
 				C26F9D75272D6D6C0018A840 /* Model */,
 				C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */,
@@ -100,6 +119,7 @@
 				C26F9D7A272D6E060018A840 /* Usuario.swift */,
 				C26F9D7D272D6F5E0018A840 /* ContainerUsuarios.swift */,
 				C26F9D80272D70460018A840 /* ContainerMensagens.swift */,
+				C224549E2736F3E600C5ACC1 /* Conversa.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +131,9 @@
 				C26F9D85272D7C940018A840 /* MensagemView.swift */,
 				C264EBB4272D88890055174D /* TriangleTip.swift */,
 				C264EBB7272D95580055174D /* MensagensContainer.swift */,
+				C22454A32736F9B100C5ACC1 /* ConversasView.swift */,
+				C22454A6273706B500C5ACC1 /* ConversasContainer.swift */,
+				C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,11 +218,16 @@
 			files = (
 				C26F9D7B272D6E060018A840 /* Usuario.swift in Sources */,
 				C26F9D86272D7C940018A840 /* MensagemView.swift in Sources */,
+				C224549F2736F3E600C5ACC1 /* Conversa.swift in Sources */,
 				C26F9D81272D70460018A840 /* ContainerMensagens.swift in Sources */,
 				C26F9D68272D6BE90018A840 /* ContentView.swift in Sources */,
+				C224549C2736CE2900C5ACC1 /* MensagensViewModel.swift in Sources */,
 				C26F9D66272D6BE90018A840 /* Senac_3_projetoApp.swift in Sources */,
 				C26F9D7E272D6F5E0018A840 /* ContainerUsuarios.swift in Sources */,
+				C22454A7273706B500C5ACC1 /* ConversasContainer.swift in Sources */,
 				C26F9D77272D6D920018A840 /* Mensagem.swift in Sources */,
+				C22454A42736F9B100C5ACC1 /* ConversasView.swift in Sources */,
+				C22454B027370A9700C5ACC1 /* TelaMensagens.swift in Sources */,
 				C264EBB5272D88890055174D /* TriangleTip.swift in Sources */,
 				C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */,
 			);

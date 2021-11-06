@@ -8,28 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var mensagem: String = ""
-    @State var mensagens = ContainerMensagens().mensagens
+    @State var usuario = Usuario(nome: "Rafael", numero: "(51) 99199-2306") //TODO: UTILIZAR USERDEFAULTS
+
+    init() {
+        MensagensViewModel.usuario = usuario
+    }
     var body: some View {
-        VStack{
-            Spacer()
-            MensagensContainer(mensagens: $mensagens)
-            HStack{
-                TextField("Mensagem...", text: $mensagem)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Button("Enviar"){
-                    mensagens.append(Mensagem(
-                        conteudo: mensagem,
-                        destinatario: ContainerUsuarios.usuarios.last!,
-                        remetente: ContainerUsuarios.usuarios.first!,
-                        hora: Date(),
-                        status: .criado)
-                    )
-                    mensagem = ""
-                }.disabled(mensagem.count <= 0)
-                
-            }
-        }.padding()
+        NavigationView{
+            ConversasContainer().navigationBarTitle("Minhas Conversas")
+        }
     }
 
     

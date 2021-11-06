@@ -10,7 +10,7 @@ import Foundation
 struct Mensagem: Identifiable {
     var id = UUID()
     var conteudo: String
-    var destinatario: Usuario
+    var usuarios: [Usuario]
     var remetente: Usuario
     var hora: Date
     enum Status: String{
