@@ -68,6 +68,6 @@ struct MensagemView: View {
 
 struct MensagemView_Previews: PreviewProvider {
     static var previews: some View {
-        MensagemView(usuario: ContainerUsuarios.usuarios.first!, conteudo: "AAAA", hora: "12:00", status: "Lido", isFirstOfGroup: true, isLastOfGroup: true)
+        MensagemView(usuario: Usuario(nome: "Daniel", numero: "41 99199-2307"), conteudo: "AAAA", hora: "12:00", status: "Lido", isFirstOfGroup: true, isLastOfGroup: true)
     }
 }

@@ -12,8 +12,11 @@
 		C22454A42736F9B100C5ACC1 /* ConversasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454A32736F9B100C5ACC1 /* ConversasView.swift */; };
 		C22454A7273706B500C5ACC1 /* ConversasContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454A6273706B500C5ACC1 /* ConversasContainer.swift */; };
 		C22454B027370A9700C5ACC1 /* TelaMensagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */; };
+		C253D17527491E9000B20497 /* UsuariosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D17427491E9000B20497 /* UsuariosViewModel.swift */; };
+		C253D17827492C8F00B20497 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D17727492C8F00B20497 /* UserDefaultsHelper.swift */; };
+		C253D17B2749327100B20497 /* NovaConversaListaUsuariosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D17A2749327100B20497 /* NovaConversaListaUsuariosView.swift */; };
 		C264EBB5272D88890055174D /* TriangleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB4272D88890055174D /* TriangleTip.swift */; };
-		C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB7272D95580055174D /* MensagensContainer.swift */; };
+		C264EBB8272D95580055174D /* MensagensContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264EBB7272D95580055174D /* MensagensContainerView.swift */; };
 		C26F9D66272D6BE90018A840 /* Senac_3_projetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */; };
 		C26F9D68272D6BE90018A840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F9D67272D6BE90018A840 /* ContentView.swift */; };
 		C26F9D6A272D6BF00018A840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26F9D69272D6BF00018A840 /* Assets.xcassets */; };
@@ -35,8 +38,11 @@
 		C22454A32736F9B100C5ACC1 /* ConversasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversasView.swift; sourceTree = "<group>"; };
 		C22454A6273706B500C5ACC1 /* ConversasContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversasContainer.swift; sourceTree = "<group>"; };
 		C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaMensagens.swift; sourceTree = "<group>"; };
+		C253D17427491E9000B20497 /* UsuariosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosViewModel.swift; sourceTree = "<group>"; };
+		C253D17727492C8F00B20497 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		C253D17A2749327100B20497 /* NovaConversaListaUsuariosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaConversaListaUsuariosView.swift; sourceTree = "<group>"; };
 		C264EBB4272D88890055174D /* TriangleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTip.swift; sourceTree = "<group>"; };
-		C264EBB7272D95580055174D /* MensagensContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensContainer.swift; sourceTree = "<group>"; };
+		C264EBB7272D95580055174D /* MensagensContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensContainerView.swift; sourceTree = "<group>"; };
 		C26F9D62272D6BE80018A840 /* Senac-3-projeto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senac-3-projeto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26F9D65272D6BE90018A840 /* Senac_3_projetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senac_3_projetoApp.swift; sourceTree = "<group>"; };
 		C26F9D67272D6BE90018A840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C224549B2736CE2900C5ACC1 /* MensagensViewModel.swift */,
+				C253D17427491E9000B20497 /* UsuariosViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 				C26F9D6E272D6BF00018A840 /* Info.plist */,
 				C280570B272DC7DD00DEBCC5 /* GoogleService-Info.plist */,
 				C26F9D6B272D6BF00018A840 /* Preview Content */,
+				C253D17727492C8F00B20497 /* UserDefaultsHelper.swift */,
 			);
 			path = "Senac-3-projeto";
 			sourceTree = "<group>";
@@ -130,10 +138,11 @@
 				C26F9D67272D6BE90018A840 /* ContentView.swift */,
 				C26F9D85272D7C940018A840 /* MensagemView.swift */,
 				C264EBB4272D88890055174D /* TriangleTip.swift */,
-				C264EBB7272D95580055174D /* MensagensContainer.swift */,
+				C264EBB7272D95580055174D /* MensagensContainerView.swift */,
 				C22454A32736F9B100C5ACC1 /* ConversasView.swift */,
 				C22454A6273706B500C5ACC1 /* ConversasContainer.swift */,
 				C22454AF27370A9700C5ACC1 /* TelaMensagens.swift */,
+				C253D17A2749327100B20497 /* NovaConversaListaUsuariosView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,19 +226,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26F9D7B272D6E060018A840 /* Usuario.swift in Sources */,
+				C253D17B2749327100B20497 /* NovaConversaListaUsuariosView.swift in Sources */,
 				C26F9D86272D7C940018A840 /* MensagemView.swift in Sources */,
 				C224549F2736F3E600C5ACC1 /* Conversa.swift in Sources */,
+				C253D17527491E9000B20497 /* UsuariosViewModel.swift in Sources */,
 				C26F9D81272D70460018A840 /* ContainerMensagens.swift in Sources */,
 				C26F9D68272D6BE90018A840 /* ContentView.swift in Sources */,
 				C224549C2736CE2900C5ACC1 /* MensagensViewModel.swift in Sources */,
 				C26F9D66272D6BE90018A840 /* Senac_3_projetoApp.swift in Sources */,
 				C26F9D7E272D6F5E0018A840 /* ContainerUsuarios.swift in Sources */,
 				C22454A7273706B500C5ACC1 /* ConversasContainer.swift in Sources */,
+				C253D17827492C8F00B20497 /* UserDefaultsHelper.swift in Sources */,
 				C26F9D77272D6D920018A840 /* Mensagem.swift in Sources */,
 				C22454A42736F9B100C5ACC1 /* ConversasView.swift in Sources */,
 				C22454B027370A9700C5ACC1 /* TelaMensagens.swift in Sources */,
 				C264EBB5272D88890055174D /* TriangleTip.swift in Sources */,
-				C264EBB8272D95580055174D /* MensagensContainer.swift in Sources */,
+				C264EBB8272D95580055174D /* MensagensContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

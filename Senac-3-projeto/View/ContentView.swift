@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var usuario = Usuario(nome: "Rafael", numero: "(51) 99199-2306") //TODO: UTILIZAR USERDEFAULTS
-
+    
     init() {
-        MensagensViewModel.usuario = usuario
+        setUserDefaultsInfo(id: "921AB8B1-4231-4403-9021-B3E5FB89F7EA", nome: "Rafael", numero: "51 99199-2306")
     }
+
     var body: some View {
         NavigationView{
             ConversasContainer().navigationBarTitle("Minhas Conversas")

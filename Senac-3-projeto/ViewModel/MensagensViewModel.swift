@@ -9,36 +9,46 @@ import Foundation
 import FirebaseFirestore
 
 class MensagensViewModel: ObservableObject {
-    
-    static var usuario: Usuario?
-    
+        
     private var db = Firestore.firestore()
     
-    var containerMensagens = ContainerMensagens()
+    @Published private var containerMensagens = ContainerMensagens()
+    
+    var mensagens: [Mensagem] {
+        return containerMensagens.mensagens
+    }
     
     var conversas: [Conversa] {
-        guard let usuarioLogado = MensagensViewModel.usuario else {
-            return []
-        }
-        let conversasDict = Dictionary(grouping: self.containerMensagens.mensagens, by: {$0.usuarios})
-        return conversasDict.map{ key, value in
-            return Conversa(
-                usuarios: key.filter{ usuario in usuario != usuarioLogado },
-                ultimaMensagem: value.sorted(by: { fist, second in
-                    return fist.hora > second.hora
-                }).last,
-                countMensagensNaoLidas: value.filter{ mensagem in mensagem.status != .lido}.count
-            )
+        return containerMensagens.conversas
+    }
+    
+    init() {
+        fetchUserMessages()
+    }
+    
+    func mensagensByUsuarios(usuarios: [Usuario]) -> [Mensagem]{
+        let mensagensUsuario: [Mensagem] = self.containerMensagens.mensagens
+        let usuariosOrdenados = usuarios.sorted(by: { $0.nome < $1.nome})
+
+        return mensagensUsuario.filter{ mensagem in
+            let usuariosMensagem = mensagem.usuarios.sorted(by: {$0.nome < $1.nome})
+            return usuariosOrdenados == usuariosMensagem
         }
     }
     
+    func updateUsuario(){
+        containerMensagens.mensagens = []
+        fetchUserMessages()
+    }
+    
     func fetchUserMessages(){
-        guard let usuario = MensagensViewModel.usuario else {
+        guard let usuario = getUserDefaultsInfo() else {
             print("Nenhum usuario setado")
             return
         }
+        print(usuario.toDict())
         
-        db.collection("mensagens").whereField("usuarios", arrayContains: usuario).addSnapshotListener{ querySnapshot, error in
+        db.collection("mensagens").addSnapshotListener{ querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
                 print("No documents")
                 return
@@ -47,11 +57,14 @@ class MensagensViewModel: ObservableObject {
             self.containerMensagens.mensagens = documents.map{ (queryDocumentSnapshot) -> Mensagem in
                 let data = queryDocumentSnapshot.data()
                 return Mensagem(data: data)
-            }
+            }.filter{ mensagem in
+                mensagem.usuarios.contains(usuario)
+            }.sorted(by: {$0.hora < $1.hora})
         }
     }
     
-    func addMessage(mensagem: Mensagem) {
+    func sendMensagem(mensagem: Mensagem) {
+        print(mensagem.toDict())
         db.collection("mensagens").document(mensagem.id.uuidString).setData(mensagem.toDict()){ err in
             if let err = err {
                 print("Erro ao inserir mensagem: \(err)")
@@ -65,47 +78,49 @@ class MensagensViewModel: ObservableObject {
 
 extension Mensagem{
     init(data: [String: Any]) {
-        self.id = data["id"] as? UUID ?? UUID()
+        self.id = UUID(uuidString: data["id"] as! String) ?? UUID()
         self.conteudo = data["conteudo"] as? String ?? ""
         
         let remetenteData = data["remetente"] as! [String: Any]
-        let usuariosData = data["usuarios"] as! [[String: Any]]
+        let usuariosData = data["usuarios"] as! [String: [String: Any]]
         
         self.remetente = Usuario(data: remetenteData)
-        self.usuarios = usuariosData.map{ usuarioData in
-            return Usuario(data: usuarioData)
+        self.usuarios = []
+
+        let horaTimeStamp = data["hora"] as! Double
+        self.hora = Date(timeIntervalSince1970: horaTimeStamp)
+        self.status = Status(rawValue: data["status"] as! String)!  //TODO: Remover cast forçado
+        usuariosData.values.forEach{ usuarioData in
+            self.usuarios.append(Usuario(data: usuarioData))
         }
-        self.hora = data["hora"] as! Date //TODO: Remover cast forçado
-        self.status = data["status"] as! Status //TODO: Remover cast forçado
     }
     
     func toDict() -> [String: Any]{
+        var mapUsuarios: [String: Any] = [:]
+        self.usuarios.forEach{ usuario in
+            mapUsuarios[usuario.id.uuidString] = usuario.toDict()
+        }
         return [
             "id" : self.id.uuidString,
             "conteudo" : self.conteudo,
-            "hora": self.hora,
-            "status": self.status,
+            "hora": self.hora.timeIntervalSince1970,
+            "status": self.status.rawValue,
             "remetente": self.remetente.toDict(),
-            "usuarios": [
-                self.usuarios.map{ usuario in
-                    return usuario.toDict
-                }
-            
-            ]
+            "usuarios": mapUsuarios
         ]
     }
 }
 
 extension Usuario{
     init(data: [String: Any]) {
-        self.id = data["id"] as! UUID //TODO: Remover cast forçado
+        self.id = UUID(uuidString: data["id"] as! String) ?? UUID() //TODO: Remover cast forçado
         self.nome = data["nome"] as? String ?? ""
         self.numero = data["numero"] as? String ?? ""
     }
     
     func toDict() -> [String: Any]{
         return [
-            "id": self.id,
+            "id": self.id.uuidString,
             "nome": self.nome,
             "numero": self.numero
         ]

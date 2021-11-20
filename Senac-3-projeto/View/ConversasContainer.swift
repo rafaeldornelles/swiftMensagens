@@ -11,16 +11,20 @@ struct ConversasContainer: View {
     
     @ObservedObject var viewModel: MensagensViewModel = MensagensViewModel()
     
+    @ObservedObject var usuariosViewModel = UsuariosViewModel()
+    
+    @State var isShowingConfiguration = false
+    
+    @State var nomeConfiguracao = ""
+    @State var telefoneConfiguracao = ""
+    
+
+    
     var body: some View{
         List(self.viewModel.conversas){ conversa in
             NavigationLink(destination: TelaMensagens(
-                    mensagem: "",
-                    mensagens: viewModel.containerMensagens.mensagens.filter{ mensagem in
-                    conversa.usuarios.allSatisfy { usuario in
-                        mensagem.usuarios.contains(usuario)
-                    }
-            }
-            )){
+                            mensagensViewModel: viewModel, usuarios: getTodosUsuariosConversa(conversa: conversa), remetente: getUserDefaultsInfo()!)
+            ){
                 ConversasView(
                     nomeConversa: conversa.usuarios.map{ usuario in usuario.nome}.joined(separator: ", "),
                     nomeUltimoRemetente: conversa.ultimaMensagem?.remetente.nome ?? "",
@@ -31,13 +35,11 @@ struct ConversasContainer: View {
         }.toolbar{
             ToolbarItem(placement: .navigationBarLeading){
                 Button("Configurar"){
-                    //TODO: configurar dados do usuario
+                    showConfigAlert()
                 }
             }
             ToolbarItem(placement: .navigationBarTrailing){
-                Button("Nova Conversa"){
-                    //TODO: Iniciar uma nova conversa
-                }
+                NavigationLink("Nova Conversa", destination: NovaConversaListaUsuariosView(mensagensViewModel: viewModel))
             }
         }
     }
@@ -50,6 +52,43 @@ struct ConversasContainer: View {
             formatter.dateFormat = "dd MM yyyy"
         }
         return formatter.string(from: date)
+    }
+    
+    func showConfigAlert(){
+        var nomeTextField: UITextField? = nil
+        var numeroTextField: UITextField? = nil
+        let alert = UIAlertController(title: "Configuração", message: "Insira as suas informações", preferredStyle: .alert)
+        alert.addTextField{ nome in
+            nome.placeholder = "Nome"
+            nome.text = nomeConfiguracao
+            nomeTextField = nome
+        }
+        alert.addTextField{ numero in
+            numero.placeholder = "Numero"
+            numero.text = telefoneConfiguracao
+            numero.keyboardType = .phonePad
+            numeroTextField = numero
+        }
+        
+        let cancel = UIAlertAction(title: "Cancelar", style: .cancel){ (_) in
+            nomeConfiguracao = ""
+            telefoneConfiguracao = ""
+        }
+        
+        let save = UIAlertAction(title: "Salvar", style: .default){ (_) in
+            usuariosViewModel.addUsuario(nome: nomeTextField!.text ?? "", numero: numeroTextField!.text ?? "", callback: {viewModel.updateUsuario()})
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(save)
+        
+        UIApplication.shared.windows.first!.rootViewController!.present(alert, animated: true, completion: nil)
+    }
+    
+    func getTodosUsuariosConversa(conversa: Conversa) -> [Usuario]{
+        var todosUsuarios = conversa.usuarios
+        todosUsuarios.append(getUserDefaultsInfo()!)
+        return todosUsuarios
     }
 
 }

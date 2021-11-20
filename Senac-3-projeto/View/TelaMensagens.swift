@@ -9,19 +9,23 @@ import SwiftUI
 
 struct TelaMensagens: View {
     @State var mensagem: String = ""
-    @State var mensagens = ContainerMensagens().mensagens
+    @ObservedObject var mensagensViewModel: MensagensViewModel
+    let usuarios: [Usuario]
+    let remetente: Usuario
+    
+    
     var body: some View {
         VStack{
             Spacer()
-            MensagensContainer(mensagens: $mensagens)
+            MensagensContainerView(mensagens: mensagensViewModel.mensagensByUsuarios(usuarios: usuarios))
             HStack{
                 TextField("Mensagem...", text: $mensagem)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button("Enviar"){
-                    mensagens.append(Mensagem(
+                    mensagensViewModel.sendMensagem(mensagem: Mensagem(
                         conteudo: mensagem,
-                                        usuarios: [ContainerUsuarios.usuarios.first!, ContainerUsuarios.usuarios.last!],
-                        remetente: ContainerUsuarios.usuarios.first!,
+                        usuarios: usuarios,
+                        remetente: remetente,
                         hora: Date(),
                         status: .criado)
                     )
@@ -36,6 +40,6 @@ struct TelaMensagens: View {
 
 struct TelaMensagens_Previews: PreviewProvider {
     static var previews: some View {
-        TelaMensagens()
+        TelaMensagens(mensagensViewModel: MensagensViewModel(), usuarios: [Usuario(nome: "Rafael", numero: "51 99199-2306"), Usuario(nome: "João", numero: "51 99199-2307")], remetente: Usuario(nome: "Rafael", numero: "51 99199-2306"))
     }
 }

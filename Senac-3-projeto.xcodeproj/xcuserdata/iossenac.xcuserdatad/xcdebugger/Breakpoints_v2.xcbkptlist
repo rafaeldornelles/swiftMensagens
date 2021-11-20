@@ -20,5 +20,437 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A2FCCCE-DB5F-4FA8-9F58-E2CD57F22F0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "addUsuario(nome:numero:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E73784AF-7678-497E-A44D-BEB3C70215C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "addUsuario(nome:numero:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "433F4C37-B530-422F-A624-FC7962E6B1AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "addUsuario(nome:numero:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD94B3BC-1DF4-44D9-8667-6A4E96732B23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "addUsuario(nome:numero:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21CE4DC6-D9A4-45BB-8D7D-494CC27A5F37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EA04D14-68F6-467D-BBCA-965E89F6E9F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5EA04D14-68F6-467D-BBCA-965E89F6E9F6 - 5e57778c95189def"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "5EA04D14-68F6-467D-BBCA-965E89F6E9F6 - 87b253f43706812c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD5B8D20-F515-4044-96DA-C12F359F5FF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C997066B-1BA6-4060-BCD0-EE9913CFE931"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/UserDefaultsHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "setUserDefaultsInfo(id:nome:numero:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF65EA5C-E0CD-4AD5-B641-999DA8E743D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF65EA5C-E0CD-4AD5-B641-999DA8E743D4 - 87b253f43706806a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "521">
+               </Location>
+               <Location
+                  uuid = "BF65EA5C-E0CD-4AD5-B641-999DA8E743D4 - 7fb6c6edc7446177"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Senac_3_projeto.Mensagem in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE16333F-3B81-4FFE-A985-7BF8178E0D9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE16333F-3B81-4FFE-A985-7BF8178E0D9C - 87b253f43706831c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "EE16333F-3B81-4FFE-A985-7BF8178E0D9C - 7fb6c6edc74463c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Senac_3_projeto.Mensagem in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.MensagensViewModel.fetchUserMessages() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9FC154F-C6AB-4915-AC77-C481C2CDD815"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "mensagensByUsuarios(usuarios:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B01FDD04-C107-47D1-8DF6-AE744E2D0336"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "mensagensByUsuarios(usuarios:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B01FDD04-C107-47D1-8DF6-AE744E2D0336 - 9badbeff25b69b86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Senac_3_projeto.MensagensViewModel.mensagensByUsuarios(usuarios: Swift.Array&lt;Senac_3_projeto.Usuario&gt;) -&gt; Swift.Array&lt;Senac_3_projeto.Mensagem&gt;"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "B01FDD04-C107-47D1-8DF6-AE744E2D0336 - 8b4a6007843580bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Senac_3_projeto.Mensagem) -&gt; Swift.Bool in Senac_3_projeto.MensagensViewModel.mensagensByUsuarios(usuarios: Swift.Array&lt;Senac_3_projeto.Usuario&gt;) -&gt; Swift.Array&lt;Senac_3_projeto.Mensagem&gt;"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B44C1FA7-14CA-4FAB-8166-AF8686F4813C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchUsuarios()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B44C1FA7-14CA-4FAB-8166-AF8686F4813C - 4f8efeb8be709e96"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.UsuariosViewModel.fetchUsuarios() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "527">
+               </Location>
+               <Location
+                  uuid = "B44C1FA7-14CA-4FAB-8166-AF8686F4813C - 4e56218bb4c4110b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Senac_3_projeto.Usuario in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Senac_3_projeto.UsuariosViewModel.fetchUsuarios() -&gt; ()"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/UsuariosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19B607E8-9CB3-46D3-A275-2A735E877E1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "fetchUserMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFBD9353-D9F8-4A06-A6DB-09D1BE0AE2B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "init(data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EFBD9353-D9F8-4A06-A6DB-09D1BE0AE2B5 - 9cd30c082548996"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Senac_3_projeto.Mensagem.init(data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Senac_3_projeto.Mensagem"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "3592">
+               </Location>
+               <Location
+                  uuid = "EFBD9353-D9F8-4A06-A6DB-09D1BE0AE2B5 - e7dcb76c002acccd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in Senac_3_projeto.Mensagem.init(data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Senac_3_projeto.Mensagem"
+                  moduleName = "Senac-3-projeto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iossenac/Documents/Senac-3-projeto/Senac-3-projeto/ViewModel/MensagensViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

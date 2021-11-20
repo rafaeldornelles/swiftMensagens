@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct MensagensContainer: View {
-    @Binding var mensagens: [Mensagem]
+struct MensagensContainerView: View {
+    var mensagens: [Mensagem]
     var body: some View {
         ScrollView{
             ScrollViewReader{ reader in
@@ -40,8 +40,8 @@ struct MensagensContainer: View {
     }
 }
 
-struct MensagensContainer_Previews: PreviewProvider {
+struct MensagensContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        MensagensContainer( mensagens: .constant(ContainerMensagens().mensagens))
+        MensagensContainerView( mensagens: [])
     }
 }
