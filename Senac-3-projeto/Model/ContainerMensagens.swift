@@ -21,7 +21,7 @@ struct ContainerMensagens {
                 ultimaMensagem: value.sorted(by: { fist, second in
                     return fist.hora < second.hora
                 }).last,
-                countMensagensNaoLidas: value.filter{ mensagem in mensagem.status != .lido}.count
+                countMensagensNaoLidas: value.filter{ mensagem in mensagem.status != .lido && mensagem.remetente != getUserDefaultsInfo()!}.count
             )
         }
     }
